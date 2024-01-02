@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #282c34;
+            color: #61dafb;
+            font-size: 24px;
+        }
+
+        #fading-text {
+            opacity: 0;
+            animation: fade 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes fade {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="fading-text">Fading Text Animation</div>
+
+</body>
+</html>
